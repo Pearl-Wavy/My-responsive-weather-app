@@ -17,6 +17,76 @@
     script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    
+   <div class="main-container">
+    <div class="weather-wrapper">
+        <div class="weather-app">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="overview">
+                        <h1 id="city"></h1>
+                        <ul>
+                            <li id="date"></li>
+                            <li id="description"></li>
+                            </ul>
+                            </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <form id="search-form">
+                                    <input
+                                    type="search"
+                                    placeholder="Enter a city"
+                                    class="form-control"
+                                    id="city-input"
+                                    autocomplete="on"
+                                    />
+                                    <div class="col-sm-2">
+                                    <input
+                                    type="submit"
+                                    value="search"
+                                    id="button"
+                                    class="button"
+                                     />
+                                     </div>
+                                     </form>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="clearfix weather-temperature">
+                                        <img src="" 
+                                        alt="clear" 
+                                        id="icon"
+                                        class="float-left"
+                                        />
+                                        <div class="float-left">
+                                            <strong id="temperature"></strong>
+                                            <span class="units"> <a href="#" id="celsium-link" class="active">°C</a> |
+                                                <a href="#" id="fuhrenheit-link" class="tempF">°F</a> </span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <ul>
+                                                <li>Precip: <span id="precipitation">16</span>%</li>
+                                                <li>Humidity: <span id="humidity">77</span>%</li>
+                                                <li>Wind: <span id="wind">8</span>km/h</li>
+                                            </ul>
+                                            </div>
+                                            <div class="weather-forecast" id="forecast">
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <div class="weather-forecast-date">Wed</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
 </body>
 </html>
