@@ -88,7 +88,7 @@ function getForecast(coordinates) {
 }
 
 function displayTemperature(response) {
-  // console.log(response);
+
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#current-city");
   let countryElement = document.querySelector("#country");
@@ -113,7 +113,7 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   
   iconElement.setAttribute("src", `
-  http://openweathermap.org/img/wn/04d@2x.png`);
+  http://openweathermap.org/img/wn/${respose.data.weather[0].icon}04d@2x.png`);
 
   sunriseElement.innerHTML = formatDate(response.data.sys.sunrise * 1000);
   sunsetElement.innerHTML = formatDate(response.data.sys.sunset * 1000);
