@@ -2,7 +2,7 @@ body {
     margin: 20px;
 }
 
-.container {
+.main-container {
     max-width: 700px;
     margin: 40px auto;
 }
