@@ -88,7 +88,7 @@ function getForecast(coordinates) {
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
+  
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#current-city");
   let countryElement = document.querySelector("#country");
@@ -134,7 +134,7 @@ function getCity(event) {
   search(searchCity.value);
 }
 
-search(`Vancouver`);
+search(`Ibadan`);
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", getCity);
