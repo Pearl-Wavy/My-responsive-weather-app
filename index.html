@@ -1,50 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
-        rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
-        crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-   
-    
-    <title>Responsive Weather app by Pearl Jonathan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
     <link rel="stylesheet" href="src/style.css" />
-    
+    <script src="https://kit.fontawesome.com/338d227227.js" crossorigin="anonymous"></script>
+    <title>Weather App - Ana Franco</title>
 </head>
+
 <body>
-   <div class="main-container">
-    <div class="row">
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-8">
-                        <form id="search-form"></h1>
-                                    <input
-                                    type="text"
-                                    class="form-control form-control-sm"
-                                    id="search-form-container"
-                                    placeholder="Enter a city"
-                                    name="search"
-                                    autofocus="on"
-                                    autocomplete="off"
-                                    />
-                                    <button 
-                                    type="submit"
-                                    class="btn btn-outline-info btn-sm">
-                                     Search
-                                    </button>
-                                    </form>
-                                </div>
-                            <div class="col-4 home-icon-container"
-                            id="home">
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <form id="search-form">
+                                <input type="text" class="form-control form-control-sm" id="search-form-container"
+                                    placeholder=" Search City" name="search" autofocus="on" autocomplete="off" />
+                                <button type="submit" class="btn btn-outline-info btn-sm">
+                                    Search
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-4 home-icon-container" id="home">
                             <i class="fa-solid fa-house home-icon"></i>
+                        </div>
+                    </div>
+                    <br />
+                    <h5 id="day-and-time"></h5>
+                    <br />
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa-solid fa-map-pin location-icon"></i>
                             <span class="location"><span id="current-city"></span>, <span id="country"></span></span>
                             <h1 class="current-temp" id="temperature"></h1>
                             <h1>
@@ -60,26 +53,25 @@
                             <p class="temp-description">
                                 💦 Humidity: <span class="humidity"></span>%
                             </p>
-                            </div>
-                            <div class="col">
-                                <img src="" alt="Sun" width="175px" class="main-temp-img" />
-                                <p class="sunrise-sunset">
-                                    Sunrise: <span id="sunrise-time"></span> <br />
-                                    Sunset: <span id="sunset-time"></span>
-                                </p>
-                            </div>
-                            <div class="forecast-box" id="forecast"></div>
-                            </div>
-                            </div>
-                            </div>
-                            <span class="footer">
-                                <a href="https://github.com/anamspe/weather-app-final" target="_blank">
-                                    Open-source code</a>
-                                by Ana Franco</span>
-                            
-                          
-                            </div>
-                            </div>
-                            <script src="script.js"></script>
+                        </div>
+                        <div class="col">
+                            <img src="" alt="Sun" width="175px" class="main-temp-img" />
+                            <p class="sunrise-sunset">
+                                Sunrise: <span id="sunrise-time"></span> <br />
+                                Sunset: <span id="sunset-time"></span>
+                            </p>
+                        </div>
+                        <div class="forecast-box" id="forecast"></div>
+                    </div>
+                </div>
+            </div>
+            <span class="footer">
+                <a href="https://github.com/anamspe/weather-app-final" target="_blank">
+                    Open-source code</a>
+                by Ana Franco</span>
+        </div>
+    </div>
+    <script src="src/app.js"></script>
 </body>
+
 </html>
