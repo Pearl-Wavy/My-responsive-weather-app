@@ -31,6 +31,7 @@ li {
     background-image: url(../images/blue-sky.jpg);
     background-size: cover;
     border: 1px solid r#d3b7;
+    
     border-radius: 10px;
     box-shadow: 5px 5px 5px 2px rgb(157, 157, 157);
 }
