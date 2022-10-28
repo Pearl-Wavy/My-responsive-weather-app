@@ -134,7 +134,7 @@ function getCity(event) {
   search(searchCity.value);
 }
 
-search(`Ibadan`);
+search(`Lagos`);
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", getCity);
