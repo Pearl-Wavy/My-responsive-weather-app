@@ -88,7 +88,7 @@ function getForecast(coordinates) {
 }
 
 function displayTemperature(response) {
-  
+  // console.log(response);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#current-city");
   let countryElement = document.querySelector("#country");
