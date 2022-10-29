@@ -1,9 +1,9 @@
 body {
     margin: 20px;
  }
- 
+
 .container {
-    color: aqua;
+    background-color: aqua;
 }
 .main-container {
     max-width: 700px;
