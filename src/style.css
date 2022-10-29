@@ -1,11 +1,12 @@
 body {
     margin: 20px;
+    background-color: aqua;
 }
 
 .main-container {
     max-width: 700px;
     margin: 40px auto;
-    background-color: aqua;
+  
 }
 
 .form-control-sm {
@@ -37,7 +38,7 @@ body {
 }
 
 .location-icon {
-    color: red;
+    color: rgb(30, 255, 0);
     font-size: 25px;
 }
 
