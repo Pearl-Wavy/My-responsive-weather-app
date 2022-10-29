@@ -57,7 +57,7 @@ function displayForecast(response) {
         `<div class="col-3 next-days">
         <div class="weather-date">${formatForecastDate(forecastDay.dt)}</div>
         <img
-          src="images/${http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+          src="images/${forecastDay.weather[0].icon}.png"
           alt="Sun"
           width="45px"
           class="forecast-icon"
@@ -112,7 +112,7 @@ function displayTemperature(response) {
   windElement.innerHTML = `${Math.round(response.data.wind.speed * 3.6)}`;
   humidityElement.innerHTML = response.data.main.humidity;
   let icon = response.data.weather[0].icon;
-  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].}@2x.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
 
