@@ -112,7 +112,7 @@ function displayTemperature(response) {
   windElement.innerHTML = `${Math.round(response.data.wind.speed * 3.6)}`;
   humidityElement.innerHTML = response.data.main.humidity;
   let icon = response.data.weather[0].icon;
-  iconElement.setAttribute("src", `images/${icon}.png`);
+  iconElement.setAttribute("src", `icons/${icon}.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
 
