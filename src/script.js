@@ -112,9 +112,8 @@ function displayTemperature(response) {
   windElement.innerHTML = `${Math.round(response.data.wind.speed * 3.6)}`;
   humidityElement.innerHTML = response.data.main.humidity;
   
-  iconElement.setAttribute("src", 
-  `http://openweathermap.org/img/wn/${respose.data.weather[0].icon}@2x.png`);
-  iconElement.setAttribute("alt", response.data.weather(0).description);
+  iconElement.setAttribute("src", `
+  http://openweathermap.org/img/wn/04d@2x.png`);
 
   sunriseElement.innerHTML = formatDate(response.data.sys.sunrise * 1000);
   sunsetElement.innerHTML = formatDate(response.data.sys.sunset * 1000);
