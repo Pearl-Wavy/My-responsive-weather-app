@@ -1,8 +1,10 @@
 body {
     margin: 20px;
-    background-color: aqua;
+ }
+ 
+.container {
+    color: aqua;
 }
-
 .main-container {
     max-width: 700px;
     margin: 40px auto;
