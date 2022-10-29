@@ -113,7 +113,8 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   
   iconElement.setAttribute("src", 
-  `http://openweathermap.org/img/wn/${respose.data.weather[0].icon}04d@2x.png`);
+  `http://openweathermap.org/img/wn/${respose.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute("alt", response.data.weather(0).description);
 
   sunriseElement.innerHTML = formatDate(response.data.sys.sunrise * 1000);
   sunsetElement.innerHTML = formatDate(response.data.sys.sunset * 1000);
